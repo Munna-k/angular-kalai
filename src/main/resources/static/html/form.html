@@ -1,0 +1,57 @@
+
+<body>
+
+<div>
+  <h2 style="color:#428bca">Registration form</h2>
+  <form class="form-horizontal" name="myForm" >
+    <div class="form-group">
+      <label class="control-label col-sm-2" >First Name:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" ng-model='fn' id="fname" placeholder="Enter First Name" name="fname" required>
+
+      </div>
+      <div class = col-sm-4 ng-hide = "IsHidden">FirstName - {{first}}</div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" >Last Name:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" ng-model='ln' id="lname" placeholder="Enter Last Name" name="lname" required>
+      </div>
+        <div class = col-sm-4 ng-hide = "IsHidden">LastName - {{last}}</div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">Employee Id:</label>
+      <div class="col-sm-4">          
+        <input type="text" class="form-control" ng-model='emid' id="empid" placeholder="Enter Employee Id" name="empid" required>
+      </div>
+        <div class = col-sm-4 ng-hide = "IsHidden">Employee Id - {{idd}}</div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">Email:</label>
+      <div class="col-sm-4">          
+        <input type="email" class="form-control" ng-model='mail' id="mail" placeholder="Enter Your Mail" name="email" required>
+      </div>
+       <div class = col-sm-4 ng-hide = "IsHidden">Mail Id - {{gmail}}</div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">Designation:</label>
+      <div class="col-sm-4">          
+        <input type="text" class="form-control" ng-model='design' id="designation" placeholder="Enter Designation" name="designation" required>
+      </div>
+       <div class = col-sm-4 ng-hide = "IsHidden">Designation - {{desig}}</div>
+    </div>
+ <div class="form-group">
+      <label class="control-label col-sm-2">Project Name:</label>
+      <div class="col-sm-4">          
+        <input type="text" class="form-control" ng-model='proName' id="projectName" placeholder="Enter Project Name" name="project" required>
+      </div>
+      <div class = col-sm-4 ng-hide = "IsHidden">Project Name - {{pname}}</div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-3 col-sm-9">
+        <button type="submit" class="btn btn-primary" ng-click="submitEmployee()">Register</button>
+      </div>
+    </div>
+  </form>
+</div>
+</body>

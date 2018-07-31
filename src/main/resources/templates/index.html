@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+	  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.min.js"></script>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <script src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+    
+<body ng-app="RoutingApp">
+<div class="container-fluid app">
+<div class = "col-md-12 head"><h2>AngularJS Routing Example</h2></div>
+<div class = "col-md-12 boddy">
+   <div class = "row">
+      <div class="col-md-2 sidenav">
+          <a href="#first">first</a>
+          <a href="#second">second</a>
+		   <a href="#third">third</a>
+       <a href="#employee">employee</a>
+      </div>
+	   <div class="col-md-10 place">
+	   <div class="col-md-12">
+          <div ng-view></div>
+		  </div>
+     </div>
+   </div>
+</div>
+	
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+.app{
+height:100vh;
+padding:0px;
+}
+
+.head{
+height:15vh;
+text-align:center;
+background-color:green;
+}
+.boddy{
+height:85vh;
+}
+.sidenav {
+    position: fixed;
+	height:85vh;
+    z-index: 1;	
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+	float:left;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.place {
+float:right;
+}
+      #mytable input{
+          width:100%;
+        }
+
+   #mytable input{
+          width:100%;
+        }

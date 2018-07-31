@@ -1,0 +1,73 @@
+
+<body>
+      <h2 align="center" style="color:#428bca">Angular Custom Table Edit</h2>
+      <h1 align="center" style="color:#428bca">Custom Table</h1>
+
+<div>
+     <div>
+      
+      <button type="button" style="float:right;margin-bottom: 10px;" class="btn btn-info " ng-click="addEmployee()">Add Employee</button>
+            <div class="col-md-12">
+
+                <div class="table-responsive">
+                  <form  id="empform" ng-submit="submitEmployee()">
+                    <table id="mytable" class="table table-bordered">
+
+                        <thead>
+                        <th style="width:5%;">SNO</th>
+                         <th style="width:10%;">Emp#</th>
+                         <th style="width:15%;">Email</th>
+                        <th style="width:10%;">First Name</th>
+                        <th style="width:10%;">Last Name</th>
+                        <th style="width:15%;">Desgination</th>
+            <th style="width:15%;">Project Name</th>
+            <th style="width:25%;">Actions</th>                     
+                        </thead>
+
+                        <tbody>
+                 
+              <tr ng-repeat="emp in employees">
+                <td>{{$index+1}}</td>
+                <td>
+                   <input  name="empId{{$index}}" ng-model="emp.empId" 
+                   ng-disabled="!enabledEdit[{{$index}}]"/>
+                  
+                </td>
+                <td>
+                   <input name="email{{$index}}" ng-model="emp.email"  ng-disabled="!enabledEdit[{{$index}}]" />
+                </td>
+                <td>
+                    <input name="firstName{{$index}}" ng-model="emp.firstName"  ng-disabled="!enabledEdit[{{$index}}]"/>
+                 </td>
+                <td>
+                   <input name="lastName{{$index}}" ng-model="emp.lastName"  ng-disabled="!enabledEdit[{{$index}}]"
+                </td>
+                <td>
+                  <input name="designation{{$index}}" ng-model="emp.designation"  ng-disabled="!enabledEdit[{{$index}}]"/>
+                </td>
+                 <td>
+                  <input name="project{{$index}}" ng-model="emp.project"  ng-disabled="!enabledEdit[{{$index}}]"/>
+                </td>
+                <td >
+                  <div class="buttons">
+                    <button class="btn btn-primary" ng-click="editEmployee($index)" ng-show="ShowEdit">Edit</button>
+					          <button class="btn btn-success" ng-click="saveEmployee($index)" ng-show="ShowSave">Save</button>
+                    <button class="btn btn-danger" ng-click="deleteEmployee($index)">Delete</button>
+                  </div>  
+                </td>
+              </tr>
+              
+                        </tbody>
+
+                    </table>
+                      <button type="submit" class="btn btn-default">Submit</button>
+                   </form>
+                    <div class="clearfix"></div>
+                 </div>
+
+            </div>
+  
+  </div>
+ 
+</body>
+   

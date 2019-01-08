@@ -109,7 +109,6 @@
 			<plugin>
         <!-- Code coverage plugin. -->
         <!-- This sets up code coverage for the unit tests, the integration tests, -->
-        <!-- and the combined coverage of both. -->
         <!-- After running a `mvn clean install`, open `target/site/jacoco-both/index.html` in a browser. -->
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>

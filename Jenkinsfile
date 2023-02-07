@@ -6,7 +6,7 @@ pipeline {
                 /* pull code from github 
                 git credentialsId: 'Github', url: 'https://github.com/Munna-k/angular-kalai.git', branch: 'master' 
                  */
-                sh 'mvn clean install'
+                mvn clean install
             }
         }
         stage('test') {
